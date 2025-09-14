@@ -110,7 +110,7 @@ class MovieViewSet(
         return MovieSerializer
 
     @action(
-        methods=["POST", "GET"],
+        methods=["POST"],
         detail=True,
         url_path="upload-image",
         permission_classes=[IsAdminUser]
